@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
+  <Metadata>
+    <Identity Language="en-US" Id="node-essentials" Version="1.1.0" Publisher="afractal"/>
+    <DisplayName>Node Essentials</DisplayName>
+    <Description xml:space="preserve">Essential extensions for node development and collaboration.</Description>
+    <Tags>essentials,javascript,nodejs,node</Tags>
+    <Categories>Extension Packs</Categories>
+    <GalleryFlags>Public</GalleryFlags>
+    <Badges></Badges>
+    <Properties>
+      <Property Id="Microsoft.VisualStudio.Code.Engine" Value="^1.30.0" />
+      <Property Id="Microsoft.VisualStudio.Code.ExtensionDependencies" Value="" />
+      <Property Id="Microsoft.VisualStudio.Code.ExtensionPack" Value="msjsdiag.debugger-for-chrome,redhat.fabric8-analytics,peterjausovec.vscode-docker,mikestead.dotenv,editorconfig.editorconfig,dbaeumer.vscode-eslint,eamodio.gitlens,wix.vscode-import-cost,orta.vscode-jest,ms-kubernetes-tools.vscode-kubernetes-tools,be5invis.vscode-icontheme-nomo-dark,christian-kohler.path-intellisense,wallabyjs.quokka-vscode,ms-vscode.vscode-typescript-tslint-plugin,visualstudioexptteam.vscodeintellicode,ms-vsliveshare.vsliveshare,redhat.vscode-yaml,github.vscode-pull-request-github" />
+      <Property Id="Microsoft.VisualStudio.Code.LocalizedLanguages" Value="" />
+      
+        <Property Id="Microsoft.VisualStudio.Services.Links.Source" Value="https://github.com/afractal/NodeEssentials.git" />
+        <Property Id="Microsoft.VisualStudio.Services.Links.Getstarted" Value="https://github.com/afractal/NodeEssentials.git" />
+        
+          <Property Id="Microsoft.VisualStudio.Services.Links.GitHub" Value="https://github.com/afractal/NodeEssentials.git" />
+        
+      
+      
+      <Property Id="Microsoft.VisualStudio.Services.Links.Learn" Value="https://github.com/afractal/NodeEssentials" />
+      
+      <Property Id="Microsoft.VisualStudio.Services.Branding.Theme" Value="light" />
+      <Property Id="Microsoft.VisualStudio.Services.GitHubFlavoredMarkdown" Value="true" />
+      
+      
+    </Properties>
+    <License>extension/LICENSE.txt</License>
+    <Icon>extension/assets/nodejs-logo.png</Icon>
+  </Metadata>
+  <Installation>
+    <InstallationTarget Id="Microsoft.VisualStudio.Code"/>
+  </Installation>
+  <Dependencies/>
+  <Assets>
+    <Asset Type="Microsoft.VisualStudio.Code.Manifest" Path="extension/package.json" Addressable="true" />
+    <Asset Type="Microsoft.VisualStudio.Services.Content.Details" Path="extension/README.md" Addressable="true" /><Asset Type="Microsoft.VisualStudio.Services.Content.License" Path="extension/LICENSE.txt" Addressable="true" /><Asset Type="Microsoft.VisualStudio.Services.Icons.Default" Path="extension/assets/nodejs-logo.png" Addressable="true" />
+  </Assets>
+</PackageManifest>

@@ -1,0 +1,4 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Wed Jan 03 09:52:59 IST 2024
+proguard-base-5.2.1.pom>google-maven-central=
+proguard-base-5.2.1.jar>google-maven-central=

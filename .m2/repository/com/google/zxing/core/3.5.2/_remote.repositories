@@ -1,0 +1,6 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Tue Jan 02 22:44:21 IST 2024
+core-3.5.2-sources.jar>=
+core-3.5.2.jar>=
+core-3.5.2-javadoc.jar>=
+core-3.5.2.pom>=

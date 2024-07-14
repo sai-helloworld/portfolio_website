@@ -1,0 +1,4 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Tue Jan 02 22:39:06 IST 2024
+guava-31.0.1-jre.jar>google-maven-central=
+guava-31.0.1-jre.pom>google-maven-central=

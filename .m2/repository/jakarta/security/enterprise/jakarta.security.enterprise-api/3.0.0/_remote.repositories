@@ -1,0 +1,4 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Wed Jan 03 09:53:41 IST 2024
+jakarta.security.enterprise-api-3.0.0.jar>google-maven-central=
+jakarta.security.enterprise-api-3.0.0.pom>google-maven-central=

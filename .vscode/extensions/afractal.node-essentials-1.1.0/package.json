@@ -1,0 +1,59 @@
+{
+	"name": "node-essentials",
+	"displayName": "Node Essentials",
+	"description": "Essential extensions for node development and collaboration.",
+	"version": "1.1.0",
+	"publisher": "afractal",
+	"license": "MIT",
+	"homepage": "https://github.com/afractal/NodeEssentials",
+	"icon": "assets/nodejs-logo.png",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/afractal/NodeEssentials.git"
+	},
+	"engines": {
+		"vscode": "^1.30.0"
+	},
+	"galleryBanner": {
+		"theme": "light"
+	},
+	"keywords": [
+		"essentials",
+		"javascript",
+		"nodejs"
+	],
+	"categories": [
+		"Extension Packs"
+	],
+	"extensionPack": [
+		"msjsdiag.debugger-for-chrome",
+		"redhat.fabric8-analytics",
+		"peterjausovec.vscode-docker",
+		"mikestead.dotenv",
+		"editorconfig.editorconfig",
+		"dbaeumer.vscode-eslint",
+		"eamodio.gitlens",
+		"wix.vscode-import-cost",
+		"orta.vscode-jest",
+		"ms-kubernetes-tools.vscode-kubernetes-tools",
+		"be5invis.vscode-icontheme-nomo-dark",
+		"christian-kohler.path-intellisense",
+		"wallabyjs.quokka-vscode",
+		"ms-vscode.vscode-typescript-tslint-plugin",
+		"visualstudioexptteam.vscodeintellicode",
+		"ms-vsliveshare.vsliveshare",
+		"redhat.vscode-yaml",
+		"github.vscode-pull-request-github"
+	],
+	"__metadata": {
+		"id": "0679e3a9-5b6f-4762-af78-2ea537dfd218",
+		"publisherId": "54124cb2-3f68-4f75-b5fa-76efbb236959",
+		"publisherDisplayName": "afractal",
+		"targetPlatform": "undefined",
+		"updated": false,
+		"isPreReleaseVersion": false,
+		"hasPreReleaseVersion": false,
+		"installedTimestamp": 1711087608681,
+		"pinned": false
+	}
+}
