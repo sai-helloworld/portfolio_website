@@ -75,6 +75,7 @@ img {
   z-index: 9999;
   top: 0;
   font-family: "Rancho";
+  overflow-y: auto;
 }
 .img_close {
   filter: invert(1);
@@ -84,7 +85,7 @@ img {
 }
 .sidebar img:hover {
   margin: 20px 0 0 10px;
-  transform: scale(1.2);
+  transform: scale(0.9);
 }
 .sidebar2 {
   width: 100%;
@@ -96,11 +97,11 @@ img {
   display: flex;
 }
 .sidebar2 img {
-  margin-right: 40px;
-  margin-top: 10px;
+  margin-right: 10px;
+/*   margin-top: 10px; */
 }
 .sidebar2 img:hover {
-  transform: scale(1.2);
+  transform: scale(0.9);
 }
 .sidebar2 p {
   color: rgb(30, 30, 30);
@@ -553,6 +554,12 @@ label {
     order: 1;
   }
 }
+@media only screen and (orientation: landscape) {
+  .sidebar2 {
+    height: 60px;
+  }
+}
+
 @media (width < 1200px) {
   .image-container {
     height: 200px;
