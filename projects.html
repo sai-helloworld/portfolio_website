@@ -4,6 +4,227 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Projects</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Briem+Hand:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Shadows+Into+Light&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rancho&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css" />
+
+    <style>
+      b {
+        color: rgb(0, 255, 145);
+      }
+
+      .project-links {
+        margin-top: 10px;
+        text-align: center;
+      }
+
+      .project-links a {
+        display: inline-block;
+        margin: 4px 6px;
+        padding: 4px 10px;
+        font-family: "Briem Hand", cursive;
+        font-size: 14px;
+        /* background-color: #00ffa5; */
+        border: solid 1px rgb(75, 177, 250);
+        color: white;
+        text-decoration: none;
+        border-radius: 6px;
+        transition: background-color 0.3s ease;
+      }
+
+      .project-links a:hover {
+        color: black;
+        /* font-weight: bold; */
+        background-color: rgb(0, 255, 144);
+        border-color: black;
+      }
+      #project-container {
+        display: flex;
+        flex-direction: column;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="block3R">
+      <div class="block3" id="Projects">
+        <p class="cursive" align="center">Projects</p>
+        <div id="project-container"></div>
+      </div>
+    </div>
+
+    <script>
+      const projects = [
+        {
+          title: "Insurance Agent DashBoard",
+          description:
+            "Built a <b>Full Stack website</b> using React.js, Spring Boot, SQL, for Insurance Agents as part of Mass Mutual INDIA Case Study, where our project helps insurance agents to manage the insurance policies.",
+          image: "projects/massMutual.jpg",
+          onclick: "#",
+          links: [
+            {
+              label: "Frontend",
+              url: "https://github.com/sai-helloworld/massmutual_front_end.git",
+            },
+            {
+              label: "Backend",
+              url: "https://github.com/Srikarnivas/login-registration.git",
+            },
+            {
+              label: "Video",
+              url: "https://www.linkedin.com/posts/sai-pavan-aa4067295_successfully-completed-internship-at-mass-activity-7260275449283371008-28rF?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAEdgq1wBO7upCu9TQMsYOISr-yzkItMKzxU",
+            },
+          ],
+        },
+        {
+          title: "Esummit 2024 VMEG",
+          description:
+            "Built a <b>Event Website</b> along with other teammates for the annual Esummit 2024 of Vardhaman College of Engineering using HTML, CSS, JavaScript, also hosted it live.",
+          image: "projects/esummit.png",
+          onclick: "#",
+          links: [
+            {
+              label: "Live Website",
+              url: "https://e-summit.vardhaman.org/index.html",
+            },
+            {
+              label: "Repo",
+              url: "https://github.com/sai-helloworld/esummit",
+            },
+          ],
+        },
+        {
+          title: "Safe Wave",
+          description:
+            "Part of the team that built hand gesture recognition using OpenCV and front-end languages during a <b>National Level Hackathon</b> at Lords College of Engineering.",
+          image: "projects/safe_wave.jpg",
+          onclick: null,
+          links: [
+            {
+              label: "Repo",
+              url: "https://github.com/sai-helloworld/hackprix",
+            },
+          ],
+        },
+        {
+          title: "My-Farm",
+          description:
+            "Built a front end webpage as a part of a <b>Ecommerce website</b> for farmers, where our project helps the farmers to buy Fertilizers at low cost.",
+          image: "projects/myfarm.png",
+          onclick: "index2.html",
+          links: [
+            // { label: "GitHub", url: "https://github.com/example/myfarm" },
+            // { label: "Demo", url: "https://myfarm.demo.com" },
+          ],
+        },
+        {
+          title: "Envi Sort",
+          description:
+            "Built a front end webpage in a National Level <b>Hackathon</b> held at CMR College of Engineering, focusing on the collection of E-waste and sending it to Recycling Plants.",
+          image: "projects/envisort.png",
+          onclick: null,
+          links: [],
+        },
+        {
+          title: "Password Generator",
+          description:
+            "Built a Random Password Generator using Python and GUI during an <b>Internship</b> at Oasis Infobyte.",
+          image: "projects/passGen.png",
+          onclick: "index2.html",
+          links: [
+            // { label: "Code", url: "https://github.com/example/password-gen" },
+          ],
+        },
+      ];
+
+      const container = document.getElementById("project-container");
+
+      projects.forEach((project, index) => {
+        const isLeft = index % 2 === 0;
+        const blockClass = isLeft ? "block3-1" : "block3-2";
+
+        const linksHTML = project.links?.length
+          ? `<div class="project-links">
+              ${project.links
+                .map(
+                  (link) =>
+                    `<a href="${link.url}" target="_blank">${link.label}</a>`
+                )
+                .join("")}
+            </div>`
+          : "";
+
+        const html = `
+          <div class="${blockClass}">
+            ${
+              isLeft
+                ? `
+              <div class="block3-1-1">
+                <div class="block3-1-1-1 blue-underline" align="center">
+                  ${project.title}
+                </div>
+                <div class="block3-1-1-2 rancho" align="center">
+                  ${project.description}
+                  ${linksHTML}
+                </div>
+              </div>
+              <img
+                class="img-3 block3-1-2"
+                src="${project.image}"
+                alt="${project.title}"
+                ${project.onclick ? `onclick="open('${project.onclick}')"` : ""}
+              />`
+                : `
+              <img
+                class="img-3 block3-2-2"
+                src="${project.image}"
+                alt="${project.title}"
+                ${project.onclick ? `onclick="open('${project.onclick}')"` : ""}
+              />
+              <div class="block3-2-1">
+                <div class="block3-2-1-1 blue-underline" align="center">
+                  ${project.title}
+                </div>
+                <div class="block3-2-1-2 rancho" align="center">
+                  ${project.description}
+                  ${linksHTML}
+                </div>
+              </div>`
+            }
+          </div>
+        `;
+
+        container.innerHTML += html;
+      });
+    </script>
+  </body>
+</html>
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projects</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -110,6 +331,5 @@
         </div>
       </div>
     </div>
-    <script src="script.js"></script>
   </body>
-</html>
+</html> -->

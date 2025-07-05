@@ -98,7 +98,7 @@ img {
 }
 .sidebar2 img {
   margin-right: 10px;
-/*   margin-top: 10px; */
+  /*   margin-top: 10px; */
 }
 .sidebar2 img:hover {
   transform: scale(0.9);
@@ -308,10 +308,11 @@ ul img:hover {
   align-self: center;
   justify-self: center;
   cursor: none;
+  transition: all ease-in 0.08s;
 }
 .img-3:hover {
   scale: 1.005;
-  box-shadow: 5px 5px 10px rgba(255, 255, 255, 0.604);
+  box-shadow: 5px 5px 10px rgba(0, 255, 145, 0.568);
 }
 
 .block2-2-1,
@@ -333,7 +334,7 @@ ul img:hover {
   color: rgb(220, 220, 220);
   /* color: ; */
   padding: 5px;
-  background-color: rgb(0, 0, 0);
+  /* background-color: rgb(0, 0, 0); */
   font-size: 80px;
   /* border: 2px white solid; */
   border-radius: 20px;
@@ -346,7 +347,7 @@ ul img:hover {
 .block3-1-1-2,
 .block3-2-1-2 {
   padding: 20px;
-  background-color: rgb(0, 0, 0);
+  /* background-color: rgb(0, 0, 0); */
   /* border: 2px white solid; */
   border-radius: 20px;
   font-weight: 400;
@@ -533,6 +534,7 @@ label {
   filter: brightness(0) saturate(100%) invert(45%) sepia(94%) saturate(678%)
     hue-rotate(157deg) brightness(94%) contrast(89%);
 }
+
 @media (width < 700px) {
   .block2-1,
   .block2-2,

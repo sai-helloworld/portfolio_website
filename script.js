@@ -1,19 +1,3 @@
-// console.log("hello world")
-// function hide_sidebar() {
-//     let sidebar = document.getElementsByClassName('sidebar')[0];
-//     sidebar.style.display = 'none';
-// }
-
-// document.addEventListener('click', function(event) {
-//     let sidebar = document.querySelector('.sidebar');
-//     if (!sidebar.contains(event.target)) {
-//         hide_sidebar();
-//     }
-// });
-// function open_sidebar(){
-//     let sidebar=document.getElementsByClassName('sidebar')[0];
-//     sidebar.style.display='block'
-// }
 console.log("hello world");
 
 function hide_sidebar() {
@@ -51,7 +35,7 @@ function updateSkills() {
   const container = document.querySelector(".grid-container4");
   const skills = {
     Javascript: "50",
-    Python: "70",
+    Python: "90",
     CSS: "80",
     R: "30",
     C: "50",

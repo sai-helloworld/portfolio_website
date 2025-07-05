@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style></style>
+  </head>
+  <body>
+    <div id="cursor-trail"></div>
+  </body>
+  <script>
+    const trailContainer = document.getElementById("cursor-trail");
+    const trailLength = 20; // number of dots
+    const trail = [];
+
+    for (let i = 0; i < trailLength; i++) {
+      const dot = document.createElement("div");
+      dot.className = "cursor-dot";
+      trailContainer.appendChild(dot);
+      trail.push({ element: dot, x: 0, y: 0 });
+    }
+
+    let mouseX = window.innerWidth / 2;
+    let mouseY = window.innerHeight / 2;
+
+    document.addEventListener("mousemove", (e) => {
+      mouseX = e.clientX;
+      mouseY = e.clientY;
+    });
+
+    function animateTrail() {
+      let x = mouseX;
+      let y = mouseY;
+
+      trail.forEach((dot, index) => {
+        const next = trail[index + 1] || trail[0];
+
+        dot.x += (x - dot.x) * 0.2;
+        dot.y += (y - dot.y) * 0.2;
+
+        dot.element.style.left = dot.x + "px";
+        dot.element.style.top = dot.y + "px";
+
+        x = dot.x;
+        y = dot.y;
+      });
+
+      requestAnimationFrame(animateTrail);
+    }
+
+    animateTrail();
+  </script>
+</html>
